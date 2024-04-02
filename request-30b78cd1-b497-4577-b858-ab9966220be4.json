@@ -1,0 +1,35 @@
+{
+  "client_id": "ui",
+  "customizations": {
+    "filesystem": [
+      {
+        "min_size": 10737418240,
+        "mountpoint": "/"
+      },
+      {
+        "min_size": 10737418240,
+        "mountpoint": "/home"
+      },
+      {
+        "min_size": 5368709120,
+        "mountpoint": "/app"
+      },
+      {
+        "min_size": 5368709120,
+        "mountpoint": "/tmp"
+      }
+    ]
+  },
+  "distribution": "rhel-93",
+  "image_name": "rhel9-withfs",
+  "image_requests": [
+    {
+      "architecture": "x86_64",
+      "image_type": "guest-image",
+      "upload_request": {
+        "options": {},
+        "type": "aws.s3"
+      }
+    }
+  ]
+}
