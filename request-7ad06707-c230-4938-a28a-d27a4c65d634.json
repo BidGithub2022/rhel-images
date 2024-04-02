@@ -1,0 +1,15 @@
+{
+  "client_id": "ui",
+  "customizations": {},
+  "distribution": "rhel-93",
+  "image_requests": [
+    {
+      "architecture": "x86_64",
+      "image_type": "guest-image",
+      "upload_request": {
+        "options": {},
+        "type": "aws.s3"
+      }
+    }
+  ]
+}
